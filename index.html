@@ -4,30 +4,141 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stretch Records | Featured Roster</title>
+
+    <!-- Inter Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <!-- PAGE SKELETON HEADER -->
+    <header class="site-header">
       <div class="container">
-        <!-- 1. Brand -->
+        <!-- 1. Brand Header -->
         <div class="brand">Stretch Records</div>
 
+        <!-- 2. Artists Kicker -->
         <p class="kicker">Artists</p>
 
+        <!-- 3. Page Title -->
         <h1>Featured Roster</h1>
 
-        <nav class="jump-nav" aria-label="Jump to artist">
+        <!-- 4. Jump Navigation -->
+        <nav class="jump-nav" aria-label="Jump to artist section">
           <ul>
-            <li><a href="#artist-1">Pinkfong</a></li>
-            <li><a href="#artist-2">Adriano Celentano</a></li>
-            <li><a href="#artist-3">Asake</a></li>
-            <li><a href="#artist-4">Miyagi and Andy Panda</a></li>
-            <li><a href="#artist-5">Johnny Cash</a></li>
+            <li><a href="#artist-1">Artist One</a></li>
+            <li><a href="#artist-2">Artist Two</a></li>
+            <li><a href="#artist-3">Artist Three</a></li>
+            <li><a href="#artist-4">Artist Four</a></li>
+            <li><a href="#artist-5">Artist Five</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="container"></main>
+    <!-- MAIN CONTENT AREA -->
+    <main>
+      <!-- ARTIST SECTION 1 (PROOFS OF CONCEPT) -->
+      <section id="artist-1" class="artist-section">
+        <div class="container">
+          <!-- 1. Round Avatar -->
+          <img
+            src="images/artist-1-avatar.jpg"
+            alt="Portrait photograph of Artist Name performing live on stage."
+            class="avatar"
+          />
+
+          <!-- 2. Name as h2 -->
+          <h2>Artist Name</h2>
+
+          <!-- 3. Meta Line -->
+          <p class="meta-line">
+            <span class="genre">Indie Rock</span> &bull;
+            <span class="song-count">5 Songs</span> &bull;
+            <span class="total-duration">Total Duration: 19m 32s</span>
+          </p>
+
+          <!-- 4. Blurb -->
+          <p class="blurb">
+            Insert the exact biography blurb text from artist-dataset.md here.
+          </p>
+
+          <!-- 5. Five Ranked Song Cards -->
+          <ol class="song-cards">
+            <!-- Card 1 -->
+            <li class="card">
+              <img
+                src="images/cover-1.jpg"
+                alt="Album cover art featuring abstract geometric blue shapes on a neutral background."
+              />
+              <div class="card-body">
+                <span class="rank">#1</span>
+                <h3>First Track Title</h3>
+                <p class="song-meta">3:45 &bull; 2023</p>
+              </div>
+            </li>
+
+            <!-- Card 2 (Example with Italian Title) -->
+            <li class="card">
+              <img
+                src="images/cover-2.jpg"
+                alt="Album cover art showing a warm sunset over a city skyline."
+              />
+              <div class="card-body">
+                <span class="rank">#2</span>
+                <h3><span lang="it">Bella Ciao</span></h3>
+                <p class="song-meta">4:10 &bull; 2022</p>
+              </div>
+            </li>
+
+            <!-- Card 3 -->
+            <li class="card">
+              <img
+                src="images/cover-3.jpg"
+                alt="Album cover art depicting a close-up of a vintage microphone in a dark studio."
+              />
+              <div class="card-body">
+                <span class="rank">#3</span>
+                <h3>Third Track Title</h3>
+                <p class="song-meta">2:55 &bull; 2021</p>
+              </div>
+            </li>
+
+            <!-- Card 4 -->
+            <li class="card">
+              <img
+                src="images/cover-4.jpg"
+                alt="Album cover art showing a long misty road passing through a dense forest."
+              />
+              <div class="card-body">
+                <span class="rank">#4</span>
+                <h3>Fourth Track Title</h3>
+                <p class="song-meta">5:12 &bull; 2020</p>
+              </div>
+            </li>
+
+            <!-- Card 5 -->
+            <li class="card">
+              <img
+                src="images/cover-5.jpg"
+                alt="Album cover art with minimalist black and white diagonal line work."
+              />
+              <div class="card-body">
+                <span class="rank">#5</span>
+                <h3>Fifth Track Title</h3>
+                <p class="song-meta">3:30 &bull; 2019</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Sections 2 through 5 will follow this exact same structure in the next branch -->
+    </main>
   </body>
 </html>
