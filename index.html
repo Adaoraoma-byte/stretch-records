@@ -23,6 +23,12 @@
         <p class="kicker">Artists</p>
 
         <h1>The Whole Roster</h1>
+
+        <p class="header-description">
+          Children's music, Italian pop, Afrobeats, hip-hop and country. Every
+          artist on the label, with their five most-streamed songs and how long
+          each one runs.
+        </p>
         <nav class="jump-nav" aria-label="Jump to artist section">
           <ul>
             <li><a href="#artist-1">Pinkfong</a></li>
@@ -451,6 +457,60 @@
           </ol>
         </div>
       </section>
+      <section id="newsletter" class="newsletter-section">
+        <div class="container">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get updates on new artist releases and curated playlists.</p>
+
+          <form action="#" method="get" class="newsletter-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="e.g., Ada Lovelace"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="jane@johnet.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="favorite-genre">Favorite Genre</label>
+              <select id="favorite-genre" name="favorite-genre" required>
+                <option value="" disabled selected>
+                  Select your favorite genre
+                </option>
+                <option value="pop">Children's music</option>
+                <option value="rock">Italian music</option>
+                <option value="hip-hop">Hip-Hop</option>
+                <option value="jazz">Jazz</option>
+                <option value="classical">Country</option>
+                <option value="electronic">Afrobeat</option>
+              </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; Stretch Records. All rights reserved.</p>
+        <p class="footer-credits">Made for Stretch Records Project</p>
+      </div>
+    </footer>
   </body>
 </html>
